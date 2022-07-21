@@ -1,6 +1,21 @@
 <h1>Repair Information</h1>
 <p><span class="error">* required field</span></p>
 
+<?php
+  
+// Initialize the session
+session_start();
+       
+// store post variables in session variables
+$_SESSION['address'] = $_POST['address'];
+$_SESSION['numBedrooms'] = $_POST['numBedrooms'];
+$_SESSION['numBathrooms'] = $_POST['numBathrooms'];
+$_SESSION['livingAreaSize'] = $_POST['livingAreaSize'];
+$_SESSION['lotSize'] = $_POST['lotSize'];
+$_SESSION['ARV'] = $_POST['ARV'];
+           
+?>
+
 <html>
 <body>
 

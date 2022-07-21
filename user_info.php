@@ -1,6 +1,22 @@
 <h1>Your Information</h1>
 <p><span class="error">* required field</span></p>
 
+<?php
+  
+// Initialize the session
+session_start();
+
+// store post variables in session variables
+$_SESSION['newFloors'] = $_POST['newFloors'];
+$_SESSION['newPaint'] = $_POST['newPaint'];
+$_SESSION['newKitchen'] = $_POST['newKitchen'];
+$_SESSION['newBathrooms'] = $_POST['newBathrooms'];
+$_SESSION['newRoof'] = $_POST['newRoof'];
+$_SESSION['newHVAC'] = $_POST['newHVAC'];
+$_SESSION['foundationIssues'] = $_POST['foundationIssues'];
+           
+?>
+
 <html>
 <body>
 
